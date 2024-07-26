@@ -1,0 +1,290 @@
+:root{
+    --color-text:rgb(48,0,0);
+    --color-prim: rgb(103, 110, 109);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top:71px ;
+}
+
+header{
+
+    background-image: url("../IMAGEN/fondo.jpg");
+    
+    background-size: 100% 500px;
+    padding: 50px;
+}
+
+header div{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 0px 25px 0px;
+
+}
+
+header img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+header h1{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+#icono-menu{
+    position: absolute;
+    display: none;
+    font-size: 2rem;
+    right: 50px;
+    color:white;
+}
+
+nav{
+    position: absolute;
+    text-align: center;   
+    top: 0;
+    
+}
+
+.navbar{
+    display: flex;
+}
+
+nav a{
+    
+    color: white;
+    text-decoration: none;
+    margin: 0 4% 0 4%;
+    margin-left: 50%;
+}
+
+
+nav a:hover{
+    color: #FFBD4A;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: beige;
+    flex: 70%;
+    height: 100%;
+    
+}
+
+
+article{
+    margin: 20px 10px;
+}
+/*
+article.ar1 {
+    margin: 20px 65px;
+}
+    */
+
+article h2{
+    margin-bottom: 10px;
+}
+
+article h1{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+article a:hover{
+    color:olive;
+}
+
+.contenedor-pack{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 2fr));
+    width: 3%;
+    margin-top: 50px;
+    margin: 10px 10px 0px 50px;
+    text-decoration:none;
+    color:rgb(48,0,0);
+    column-gap: 660%;
+    row-gap: 30px;
+}
+
+.contenedor-prod{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    width: 400px;
+    margin-top: 50px;
+    margin: 10px 10px 0px 50px;
+    text-decoration:none;
+    color:rgb(48,0,0);
+    column-gap: 50%;
+    row-gap: 30px;
+}
+
+article .a{
+   
+    background-color: rgba(255, 174, 0, 0.11);
+    text-decoration:none;
+    color:rgb(48,0,0);
+}
+
+
+
+.caja h1{
+    color:var(--color-prim);
+    font-weight:600;
+}
+
+article div {
+    display: flex;
+    
+    width: 400px;
+}
+
+
+
+article img{
+    width: 100px;
+    height: 100px;   
+    margin-left: 5px;
+}
+
+footer{
+    height: 80px;
+    background-color: rgb(30,0,0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+}
+
+footer img {
+    margin-left: 10px;
+   margin-top: 5px;
+   width:20px;
+   height:20px;
+}
+footer a{
+    display: flex;
+    margin:0;
+}
+
+@media screen and (max-width:700px){
+
+
+    nav{            
+      display: flex; 
+      text-align: center; 
+      margin-left: 1%;  
+    }
+    .navbar{
+        position: absolute;
+        top:-500px;
+    
+        display: flex;
+      
+        text-align: center;
+        
+       
+
+    }
+    #icono-menu{
+        display:initial;
+        font-size: 2rem;
+    }
+    .navbar a{
+        display: flex;
+    }
+    
+    nav a{
+        padding: 5px 0;
+        margin-left: 3%;
+    }
+
+    .navbar.activo{
+        top:100%;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header h1{
+        font-size: 3em;
+    }
+
+    main{
+        display: flex;
+        
+    }
+    section{
+        width:100px;
+    }
+
+    article h2{
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    article h1{
+        font-size:0.8em;
+        display:flex;
+        width:40px
+    }
+    article h3{
+        display:flex;
+        width:140px
+    }
+
+    .caja{
+        display: flex;
+        
+    }
+
+    
+
+    article a{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    article .a{
+        display: flex;
+        width:336px;
+        flex-direction:column;
+    }
+    
+    .contenedor-prod{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-pack{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    footer h4{
+        display:flex;
+        flex-direction: column;
+        font-size: 0.5em;
+    }
+   
+}
